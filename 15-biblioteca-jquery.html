@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>jQuery - Biblioteca JavaScript</title>
+
+    <style>
+      * { box-sizing: border-box; }
+
+      body { font-family: "Segoe UI", "Verdana"; }
+
+      .destaque {
+        background-color: lightpink;
+        border: solid 1px black;
+        padding: 5px;
+        font-weight: bold;
+        width: 20%;
+      }
+
+    </style>
+  </head>
+
+  <body>
+    <h1>Usando recursos da biblioteca jQuery</h1>
+    <hr>
+    <p>Site oficial: <a href="https://jquery.com/" target="_blank">https://jquery.com</a></p>
+    <hr>
+
+    <h2>Exemplo 01: manipulando o DOM</h2>
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores, reiciendis.</p>
+    <h3>Classic Rock</h3>
+    <ul>
+      <li>Deep Purple</li>
+      <li>Black Sabbath</li>
+      <li>Led Zeppelin</li>
+    </ul>
+
+    <hr>
+    <h2>Exemplo 02: lidando com eventos</h2>
+
+    <form action="" method="post" autocomplete="off">
+      <p>
+        <label for="nome">Qual seu nome?</label>
+        <input type="text" name="nome" id="nome" required>
+      </p>
+      <p>
+        <label for="tema">Escolha um esquema de cor para a página:</label>
+        <select name="tema" id="tema" required>
+            <option value=""></option>
+            <option value="lightblue">Azul</option>
+            <option value="lightgreen">Verde</option>
+            <option value="lightyellow">Amarelo</option>
+        </select>
+      </p>
+      <button type="submit">OK</button>
+    </form>
+
+    <hr>
+
+    <!-- Importação da Biblioteca jQuery -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <script src="js/15-exemplo-jquery.js"></script>
+    
+    
+
+  </body>
+</html>

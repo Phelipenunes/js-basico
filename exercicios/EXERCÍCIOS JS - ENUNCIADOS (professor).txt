@@ -1,0 +1,55 @@
+DESAFIO!
+
+-Faça as linhas da tabela aparecerem com a cor vermelha (quando for aluno reprovado) e azul (quando for aluno aprovado)
+
+Dica: use classes CSS para as cores.
+
+
+
+
+
+
+
+
+
+
+
+
+EXERCÍCIOS JS
+
+
+Exercício 03
+
+- Na pasta "exercícios" crie o arquivo "exercicio03.html".
+- Crie também o arquivo "exercicio03.js" e o conecte ao arquivo "exercicio03.html".
+- Faça uma programação JavaScript que permita avaliar o valor de um salário e calcular um novo valor de salário baseado nos seguintes critérios:
+
+Se o salário for abaixo de 1500, o novo salário deve ter um aumento de 15%. 
+Senão, se for igual ou menor que 3000, deve ter aumento de 10%.
+Qualquer outra situação, o aumento será de 5%.
+
+Mostre no console uma mensagem informando o valor do salário antigo (antes do reajuste) e do novo salário (após o reajuste).
+
+
+
+Exercício 02
+
+- Na pasta "exercícios" crie o arquivo "exercicio02.html"
+- Crie também uma pasta "js" dentro de "exercicios" e nela faça o arquivo "exercicio02.js"
+- Conecte o arquivo JS no arquivo HTML
+- Agora, no JS, crie um objeto chamado "pedido" contendo as seguintes informações: Código, data, produtos (lista com 3 produtos), preço e prazo de entrega.
+
+-Mostre no console alguns dados dados do pedido, como por exemplo o código, os produtos e o preço.
+
+
+
+Exercício 01
+
+- Dentro de "curso-javascript", crie uma pasta chamada "exercicios"
+- Dentro dela, crie um arquivo chamado "exercicio01.html"
+- Coloque pelo menos um <h1> com o título Exercício 01
+- Agora faça a seguinte programação JS:
+  1) Crie uma variável para armazenar o nome de um livro ou filme de sua preferência
+  2) Crie uma constante para armazenar o ano de lançamento do livro/filme
+  3) Exiba no console uma mensagem personalizada apresentando o nome do livro/filme e o ano de lançamento
+  

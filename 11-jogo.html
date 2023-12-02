@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Jogo da Advinhação</title>
+
+<!-- Importando a biblioteca Animate CSS -->
+<link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
+
+<style>
+body { font-family: 'Segoe UI', Verdana; }
+
+.container {
+    width: 80%;
+	max-width: 800px;
+    margin: auto;
+    padding: 1%;
+    border: solid 1px;
+    text-align: center;
+    background-color: white;
+}
+
+form {
+    padding: 1%;
+    background-color: #ccc;
+    width: 80%;
+    margin: auto;
+}
+
+input {
+    padding: 2px;
+    border: none;
+    text-align: center;
+    padding: 4px;
+    font-size: 20px;
+}
+</style>
+</head>
+<body>
+    <div class="container">
+
+        <h1 class="animate__animated animate__pulse">Jogo da Adivinhação </h1>
+
+        <p>Tente advinhar o número que o computador escolheu.</p>
+    
+        <form action="" method="post">
+            <label for="palpite">Seu palpite:</label> <br>
+            <input min="1" max="10" type="number" id="palpite" required> <br>
+            <button type="submit">Palpitar</button>
+        </form>
+    
+        <h2 id="resultado"></h2>
+    
+        <img id="imagem" src="" alt="">
+    </div>
+
+    <script src="js/11-jogo.js"></script>
+    
+</body>
+</html>

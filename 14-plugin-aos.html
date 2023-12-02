@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Plugin AOS</title>
+
+  <!-- Importação da biblioteca AOS (CSS)-->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+  <style>
+    * { box-sizing: border-box; }
+
+    body { font-family: "Segoe UI", "Verdana"; }
+
+    main {
+      padding: 2%;
+      width: 70%;
+      margin: auto;
+    }
+
+    img {
+      max-width: 100%;
+      border: solid 1px;
+    }
+
+    article {
+      background-color: azure;
+      padding: 5px;
+      border: solid 1px;
+      margin: 10px 0;
+      text-align: center;
+    }
+  </style>
+</head>
+
+<body>
+  <h1>Revelação de conteúdo com AOS</h1>
+  <hr>
+  <h2>Efeitos de revelação de conteúdo ao rolar a página.</h2>
+  <p>
+    <i>Informações gerais:</i>
+    <a href="https://michalsnik.github.io/aos/" target="_blank">https://michalsnik.github.io/aos/</a>. <br>
+    Documentação:
+    <a href="https://github.com/michalsnik/aos" target="_blank">https://github.com/michalsnik/aos</a>
+  </p>
+  <hr>
+
+  <main>
+    <article data-aos="fade-right" data-aos-duration="3000"
+    data-aos-easing="ease-out">
+      <h2>Lorem ipsum.</h2>
+      <p><img src="imagens/ideias.jpg" alt=""></p>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam,
+        fugiat. Consectetur veritatis repudiandae dicta itaque quo ducimus,
+        quaerat sequi quia sapiente voluptas ullam eius reiciendis est minima
+        natus iusto adipisci.</p>
+    </article>
+
+    <article data-aos="fade-left">
+      <h2>Lorem ipsum dolor.</h2>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam,
+        fugiat. Consectetur veritatis repudiandae dicta itaque quo ducimus,
+        quaerat sequi quia sapiente voluptas ullam eius reiciendis est minima
+        natus iusto adipisci.</p>
+        <p><img src="imagens/pacoca.jpg" alt=""></p>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem dicta
+        magnam asperiores quas molestiae adipisci illo perferendis fugiat
+        ipsum, rerum quibusdam soluta dolores nobis natus culpa esse amet?
+        Quae dolorem odio nostrum quos, harum non in, alias vitae nihil
+        explicabo esse totam et repellendus aspernatur est maxime iusto
+        asperiores obcaecati?</p>
+    </article>
+
+    <article data-aos="fade-right">
+      <h2>Lorem ipsum.</h2>
+      <img src="imagens/dedos.jpg" alt="">
+      <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam,
+        fugiat. Consectetur veritatis repudiandae dicta itaque quo ducimus,
+        quaerat sequi quia sapiente voluptas ullam eius reiciendis est minima
+        natus iusto adipisci.</p>
+    </article>
+
+    <article data-aos="fade-left">
+      <h2>Lorem ipsum dolor.</h2>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam,
+        fugiat. Consectetur veritatis repudiandae dicta itaque quo ducimus,
+        quaerat sequi quia sapiente voluptas ullam eius reiciendis est minima
+        natus iusto adipisci.</p>
+        <p><img src="imagens/ideias.jpg" alt=""></p>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem dicta
+        magnam asperiores quas molestiae adipisci illo perferendis fugiat
+        ipsum, rerum quibusdam soluta dolores nobis natus culpa esse amet?
+        Quae dolorem odio nostrum quos, harum non in, alias vitae nihil
+        explicabo esse totam et repellendus aspernatur est maxime iusto
+        asperiores obcaecati?</p>
+    </article>
+  </main>
+
+  <!-- Importação da biblioteca AOS (JS) -->
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+  <script>
+    AOS.init();
+  </script>
+
+</body>
+
+</html>
