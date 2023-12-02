@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>jQuery - Plugin Slick</title>
+
+    <link rel="stylesheet" href="slick/slick.css" />
+    <link rel="stylesheet" href="slick/slick-theme.css" />
+
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+      html {
+        font-size: 14px;
+      }
+      body {
+        font-family: "Segoe UI", "Verdana";
+      }
+      img {
+        max-width: 100%;
+      }
+
+      .container {
+        margin: auto;
+        width: 80%;
+        background-color: lavender;
+        padding: 8px;
+        border-radius: 8px;
+      }
+
+      .slider {
+        margin: auto;
+        max-width: 549px;
+      }
+
+      .slider section {
+        margin-bottom: 20px;
+      }
+
+      .slider h2,
+      .slider p {
+        margin: 0;
+      }
+      .voltar,
+      .avancar {
+        position: absolute;
+        bottom: 100px;
+        background-color: white;
+        color: blue;
+        text-decoration: none;
+        z-index: 100;
+      }
+
+      .voltar {
+        left: 0;
+      }
+      .avacar {
+        right: 0;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="container">
+      <h1>jQuery - Plugin de Carousel/Slider de conteúdo</h1>
+      <hr />
+      <p>
+        Referência:
+        <a href="https://kenwheeler.github.io/slick/" target="_blank">Slick</a>
+      </p>
+
+      <!-- Estrutura do Slider/Carousel -->
+      <div class="slider">
+        <div>
+          <img src="imagens/dedos.jpg" alt="" />
+          <h2>Dedos</h2>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium
+            ipsam, tempore aspernatur ipsum consectetur nostrum molestias
+          </p>
+        </div>
+
+        <div>
+          <img src="imagens/ideias.jpg" alt="" />
+          <h2>Papel colorido</h2>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium
+            ipsam, tempore aspernatur ipsum consectetur nostrum molestias
+          </p>
+        </div>
+
+        <div>
+          <img src="imagens/pacoca.jpg" alt="" />
+          <h2>Paçoca</h2>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium
+            ipsam, tempore aspernatur ipsum consectetur nostrum molestias
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Importação da Biblioteca jQuery -->
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+      integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+
+    <script src="slick/slick.min.js"></script>
+    <script>
+      $(".slider").slick({
+        autoplay: true,
+        autoplaySpeed: 2000,
+        Arrows: true,
+        prevArrow: "<a class='voltar' href=''>Voltar</a>",
+        nextArrow: "<a class='avancar' href=''>Avançar</a>",
+      });
+    </script>
+  </body>
+</html>

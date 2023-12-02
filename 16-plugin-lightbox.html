@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="lightbox/css/lightbox.min.css" />
+    <title>jQuery - Plugin Lightbox</title>
+
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+      html {
+        font-size: 14px;
+      }
+      body {
+        font-family: "Segoe UI", "Verdana";
+      }
+      img {
+        max-width: 100%;
+      }
+      .container {
+        margin: auto;
+        width: 80%;
+        background-color: lightyellow;
+        padding: 8px;
+        border-radius: 8px;
+      }
+
+      .galeria {
+        text-align: center;
+      }
+      .galeria a {
+        text-decoration: none;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="container">
+      <h1>jQuery - Plugin de Galeria de Fotos</h1>
+      <hr />
+      <p>
+        Referência:
+        <a href="https://lokeshdhakar.com/projects/lightbox2/" target="_blank"
+          >Lightbox</a
+        >
+      </p>
+
+      <!-- Estrutura da Galeria -->
+      <div class="galeria">
+        <a
+          data-lightbox="fotos"
+          data-title="Texto 1..."
+          href="imagens/apple.jpg"
+        >
+          <img src="imagens/mini-apple.jpg" alt="" />
+        </a>
+        <a data-lightbox="fotos" data-title="Texto 2..." href="imagens/ibm.jpg">
+          <img src="imagens/mini-ibm.jpg" alt="" />
+        </a>
+        <a
+          data-lightbox="fotos"
+          data-title="Texto 3..."
+          href="imagens/microsoft.jpg"
+        >
+          <img src="imagens/mini-microsoft.jpg" alt="" />
+        </a>
+      </div>
+    </div>
+
+    <!-- Importação da Biblioteca jQuery -->
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+      integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+
+    <script src="lightbox/js/lightbox.min.js"></script>
+    <script>
+      lightbox.option({
+        resizeDuration: 150,
+        wrapAround: true,
+        albumLabel: "Foto %1 de %2",
+      });
+    </script>
+  </body>
+</html>
