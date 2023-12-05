@@ -43,22 +43,6 @@
       .slider p {
         margin: 0;
       }
-      .voltar,
-      .avancar {
-        position: absolute;
-        bottom: 100px;
-        background-color: white;
-        color: blue;
-        text-decoration: none;
-        z-index: 100;
-      }
-
-      .voltar {
-        left: 0;
-      }
-      .avacar {
-        right: 0;
-      }
     </style>
   </head>
 
@@ -115,9 +99,6 @@
       $(".slider").slick({
         autoplay: true,
         autoplaySpeed: 2000,
-        Arrows: true,
-        prevArrow: "<a class='voltar' href=''>Voltar</a>",
-        nextArrow: "<a class='avancar' href=''>Avançar</a>",
       });
     </script>
   </body>
